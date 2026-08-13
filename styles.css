@@ -1,0 +1,233 @@
+﻿/* Estilos do LUARA Media Kit */
+/* =========================================================
+   LUARA MEDIA KIT
+   Design System Base
+   ========================================================= */
+
+:root {
+  /* Cores oficiais */
+  --cor-grafite-profundo: #121216;
+  --cor-ameixa-tecnologica: #54325E;
+  --cor-lavanda-mineral: #B5A1C0;
+  --cor-marfim-digital: #F6F3EE;
+
+  /* Cores de apoio */
+  --cor-superficie: #1A1A21;
+  --cor-texto-secundario: #A8A5AD;
+  --cor-branco: #FFFFFF;
+
+  /* Tipografia */
+  --fonte-titulo: "Space Grotesk", sans-serif;
+  --fonte-editorial: "Lora", serif;
+  --fonte-corpo: "DM Sans", sans-serif;
+
+  /* Tamanhos */
+  --texto-xs: 0.75rem;
+  --texto-sm: 0.875rem;
+  --texto-base: 1rem;
+  --texto-lg: 1.125rem;
+  --texto-xl: 1.5rem;
+  --texto-2xl: 2rem;
+  --texto-3xl: 3rem;
+  --texto-4xl: 4rem;
+
+  /* Espaçamentos */
+  --espaco-1: 0.5rem;
+  --espaco-2: 1rem;
+  --espaco-3: 1.5rem;
+  --espaco-4: 2rem;
+  --espaco-5: 3rem;
+  --espaco-6: 4rem;
+  --espaco-7: 6rem;
+
+  /* Bordas */
+  --raio-sm: 8px;
+  --raio-md: 16px;
+  --raio-lg: 24px;
+
+  /* Layout */
+  --largura-maxima: 1200px;
+}
+
+/* =========================================================
+   Reset e base global
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: var(--cor-grafite-profundo);
+  color: var(--cor-marfim-digital);
+
+  font-family: var(--fonte-corpo);
+  font-size: var(--texto-base);
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* =========================================================
+   Capa
+   ========================================================= */
+
+.capa {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(181, 161, 192, 0.12),
+      transparent 30%
+    ),
+    var(--cor-grafite-profundo);
+}
+
+.capa__conteudo {
+  width: min(100% - 3rem, var(--largura-maxima));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: var(--espaco-4) 0;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--espaco-4);
+}
+
+.capa__marca {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+}
+
+.capa__simbolo {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid rgba(246, 243, 238, 0.22);
+  border-radius: 50%;
+  position: relative;
+}
+
+.capa__simbolo {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+
+.capa__nome {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-lg);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.capa__principal {
+  align-self: center;
+  max-width: 58rem;
+}
+
+.capa__categoria {
+  margin-bottom: var(--espaco-3);
+
+  font-family: var(--fonte-corpo);
+  font-size: var(--texto-sm);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: var(--cor-lavanda-mineral);
+}
+
+.capa__titulo {
+  max-width: 13ch;
+  margin-bottom: var(--espaco-3);
+
+  font-family: var(--fonte-titulo);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.capa__titulo em {
+  display: block;
+
+  margin-top: 0.08em;
+
+  font-family: var(--fonte-editorial);
+  font-weight: 400;
+  color: var(--cor-lavanda-mineral);
+}
+
+.capa__descricao {
+  max-width: 38rem;
+
+  font-size: var(--texto-lg);
+  color: var(--cor-texto-secundario);
+}
+
+.capa__rodape {
+  padding-top: var(--espaco-3);
+
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: var(--espaco-3);
+
+  border-top: 1px solid rgba(246, 243, 238, 0.14);
+
+  font-size: var(--texto-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-texto-secundario);
+}
+
+@media (max-width: 700px) {
+  .capa__conteudo {
+    width: min(100% - 2rem, var(--largura-maxima));
+    padding: var(--espaco-3) 0;
+  }
+
+  .capa__titulo {
+    font-size: clamp(2.8rem, 14vw, 4.5rem);
+  }
+
+  .capa__rodape {
+    grid-template-columns: 1fr;
+    gap: var(--espaco-1);
+  }
+}

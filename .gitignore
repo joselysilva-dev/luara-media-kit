@@ -1,0 +1,20 @@
+﻿# Arquivos de sistema
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Configurações locais do editor
+.vscode/
+.idea/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example

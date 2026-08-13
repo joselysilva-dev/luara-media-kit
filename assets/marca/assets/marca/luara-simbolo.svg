@@ -1,0 +1,18 @@
+<svg
+  viewBox="0 0 120 120"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-labelledby="titulo descricao"
+>
+  <title id="titulo">Símbolo LUARA</title>
+  <desc id="descricao">
+    Símbolo geométrico formado por planos convergentes.
+  </desc>
+
+  <polygon points="60,10 20,35 60,60" fill="#F6F3EE"/>
+  <polygon points="60,10 100,35 60,60" fill="#B5A1C0"/>
+  <polygon points="20,35 20,85 60,60" fill="#54325E"/>
+  <polygon points="100,35 100,85 60,60" fill="#8E6B9E"/>
+  <polygon points="20,85 60,110 100,85 60,60" fill="#2E1B36"/>
+</svg>
