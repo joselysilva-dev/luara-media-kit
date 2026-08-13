@@ -1,5 +1,4 @@
-﻿/* Estilos do LUARA Media Kit */
-/* =========================================================
+﻿/* =========================================================
    LUARA MEDIA KIT
    Design System Base
    ========================================================= */
@@ -107,13 +106,12 @@ textarea {
 
 .capa {
   min-height: 100vh;
-  display: flex;
-  align-items: stretch;
+
   background:
     radial-gradient(
-      circle at 80% 20%,
-      rgba(181, 161, 192, 0.12),
-      transparent 30%
+      circle at 82% 18%,
+      rgba(181, 161, 192, 0.10),
+      transparent 32%
     ),
     var(--cor-grafite-profundo);
 }
@@ -132,39 +130,23 @@ textarea {
 .capa__marca {
   display: flex;
   align-items: center;
-  gap: var(--espaco-2);
 }
 
-.capa__simbolo {
-  width: 2.25rem;
-  height: 2.25rem;
-  border: 1px solid rgba(246, 243, 238, 0.22);
-  border-radius: 50%;
-  position: relative;
-}
-
-.capa__simbolo {
-  width: 2.75rem;
-  height: 2.75rem;
-  flex-shrink: 0;
-}
-
-.capa__nome {
-  font-family: var(--fonte-titulo);
-  font-size: var(--texto-lg);
-  font-weight: 700;
-  letter-spacing: 0.18em;
+.capa__logo {
+  display: block;
+  width: clamp(12rem, 20vw, 16rem);
+  height: auto;
+  object-fit: contain;
 }
 
 .capa__principal {
   align-self: center;
-  max-width: 58rem;
+  max-width: 62rem;
 }
 
 .capa__categoria {
   margin-bottom: var(--espaco-3);
 
-  font-family: var(--fonte-corpo);
   font-size: var(--texto-sm);
   font-weight: 500;
   letter-spacing: 0.16em;
@@ -186,7 +168,6 @@ textarea {
 
 .capa__titulo em {
   display: block;
-
   margin-top: 0.08em;
 
   font-family: var(--fonte-editorial);
@@ -196,6 +177,7 @@ textarea {
 
 .capa__descricao {
   max-width: 38rem;
+  margin-bottom: 0;
 
   font-size: var(--texto-lg);
   color: var(--cor-texto-secundario);
@@ -216,14 +198,26 @@ textarea {
   color: var(--cor-texto-secundario);
 }
 
+/* =========================================================
+   Responsividade
+   ========================================================= */
+
 @media (max-width: 700px) {
   .capa__conteudo {
     width: min(100% - 2rem, var(--largura-maxima));
     padding: var(--espaco-3) 0;
   }
 
+  .capa__logo {
+    width: 11rem;
+  }
+
   .capa__titulo {
     font-size: clamp(2.8rem, 14vw, 4.5rem);
+  }
+
+  .capa__descricao {
+    font-size: var(--texto-base);
   }
 
   .capa__rodape {
