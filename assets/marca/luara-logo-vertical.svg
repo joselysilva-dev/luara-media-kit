@@ -1,0 +1,35 @@
+<svg
+  width="240"
+  height="300"
+  viewBox="0 0 240 300"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-labelledby="titulo descricao"
+>
+  <title id="titulo">LUARA - logo vertical</title>
+  <desc id="descricao">
+    Assinatura vertical da LUARA com símbolo geométrico e wordmark central.
+  </desc>
+
+  <g transform="translate(60 18) scale(1.05)">
+    <polygon points="60,10 20,35 60,60" fill="#F6F3EE"/>
+    <polygon points="60,10 100,35 60,60" fill="#B5A1C0"/>
+    <polygon points="20,35 20,85 60,60" fill="#54325E"/>
+    <polygon points="100,35 100,85 60,60" fill="#8E6B9E"/>
+    <polygon points="20,85 60,110 100,85 60,60" fill="#2E1B36"/>
+  </g>
+
+  <text
+    x="120"
+    y="206"
+    text-anchor="middle"
+    fill="#F6F3EE"
+    font-family="'Space Grotesk', 'Segoe UI', Arial, sans-serif"
+    font-size="30"
+    font-weight="600"
+    letter-spacing="8"
+  >
+    LUARA
+  </text>
+</svg>
